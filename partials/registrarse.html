@@ -1,0 +1,54 @@
+<chkt-header></chkt-header>
+
+<div class="container-fluid section-container" id="registrarse-container" role="main">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 content-col">
+			<form novalidate id="registrarse-form" class="content-form" name="registrarseForm">
+				<h3>Regístrate y comienza a prevenir</h3>
+				<div>
+					<label for="curp">CURP</label><br />
+					<input type="text" ng-model="registrarse.user.curp" required>
+				</div>
+				<div>
+					<label for="nombre">Nombre</label><br />
+					<input type="text" ng-model="registrarse.user.nombre" required>
+				</div>
+				<div>
+					<label for="nombre">Apellido Paterno</label><br />
+					<input type="text" ng-model="registrarse.user.apaterno" required>
+				</div>
+				<div>
+					<label for="nombre">Apellido Materno</label><br />
+					<input type="text" ng-model="registrarse.user.amaterno" required>
+				</div>
+				<div>
+					<label for="nombre">NSS</label><br />
+					<input type="text" ng-model="registrarse.user.nss" required>
+				</div>
+				<div>
+					<label for="nombre">Fecha de Nacimiento</label><br />
+					<input type="date" ng-model="registrarse.user.fecha_nacimiento" required>
+				</div>
+				<div>
+					<label for="nombre">Sexo</label><br />
+					<select ng-model="registrarse.user.sexo" required>
+						<option value="">Seleccionar</option>
+						<option value="hombre">Hombre</option>
+						<option value="mujer">Mujer</option>
+					</select>
+				</div>
+				<div>
+					<label for="nombre">Correo Electrónico</label><br />
+					<input type="email" ng-model="registrarse.user.email" required>
+				</div>
+				<div>
+					<label for="nombre">Contraseña</label><br />
+					<input type="password" ng-model="registrarse.user.password" required>
+				</div>
+				<div>
+					<button value="Guardar" ng-click="registrarse.registrarse()" ng-disabled="registrarseForm.$invalid">Guardar</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

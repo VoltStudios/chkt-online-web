@@ -1,0 +1,49 @@
+<chkt-header></chkt-header>
+
+<div class="container-fluid section-container" id="cuestionario-container" role="main">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 content-col">
+			<form novalidate id="cuestionario-form" name="cuestionarioForm" class="content-form">
+				<h3>Regístrate y empieza a prevenir</h3>
+				<div>
+					<label for="peso">Peso</label><br />
+					<input name="peso" type="text" ng-model="cuestionario.status.peso" required>
+				</div>
+				<div>
+					<label for="estatura">Estatura</label><br />
+					<input name="estatura" type="text" ng-model="cuestionario.status.estatura" required>
+				</div>
+				<div>
+					<label for="consumo_cigarro">Consumo de Cigarros</label><br />
+					<select name="consumo_cigarro" ng-model="cuestionario.status.consumo_cigarro" required>
+						<option value="0" selected>No Fumo</option>
+						<option value="1">1-4 Cigarros / Semana</option>
+						<option value="2">1 o Menos Cajetillas / semana</option>
+						<option value="3">1-2 Cajetillad / Día</option>
+						<option value="4">Más de Dos Cajetillas al Día</option>
+					</select>
+				</div>
+				<div>
+					<label for="consumo_alcohol">Consumo de Alcohol</label><br />
+					<select name="consumo_alcohol" ng-model="cuestionario.status.consumo_alcohol" required>
+						<option value="0" selected>Ninguno</option>
+						<option value="1">1-2 Tragos / Semana</option>
+						<option value="2">2-4 Tragos / Semana</option>
+						<option value="3">5-8 Tragos / Semana</option>
+						<option value="4">+9 Tragos / Semana</option>
+					</select>
+				</div>
+				<div>
+					<label for="estilo_de_vida">Estilo de Vida</label><br />
+					<select name="estilo_de_vida" ng-model="cuestionario.status.estilo_de_vida" required>
+						<option value="0" selected>Sedentario</option>
+						<option value="1">Levemente Activo</option>
+						<option value="2">Activo</option>
+						<option value="3">Muy Activo</option>
+					</select>
+				</div>
+				<div><button ng-click="cuestionario.responder(cuestionario.status)" ng-disabled="cuestionarioForm.$invalid">Guardar</button></div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,34 @@
+<div class="container" id="pantalla-principal-container">
+	<div class="row">
+		<div class="col-xs-12">
+			<a href="/" class="back-button"><i class="material-icons" id="top-back">keyboard_arrow_left</i></a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<h3 class="texto-head">Bienvenido</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<img class="avatar-grande" src="/images/account_circle.svg" alt="Avatar Usuario">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<p>{{ pantallaPrincipal.nombre || "Usuario" }}</p>
+		</div>
+	</div>
+	<div id="sin-cuestionario" ng-hide="pantallaPrincipal.user && pantallaPrincipal.user.cuestionario_tomado">
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<p>Contesta las siguientes preguntas para conocer el estado de tú salud.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<a href="/cuestionario" class="button-link">Cuestionario</a>
+			</div>
+		</div>
+	</div>
+</div>
