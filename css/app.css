@@ -1,1 +1,149 @@
-a.button-link{border:2px solid #5c5c5c;border-radius:3px;color:#5c5c5c;padding:.4em 1.4em}body{background-image:url(/images/login_background.png);color:#5c5c5c}#header,body h1,body h2,body h3,body h4,body h5,body h6{color:#fff}#header{background:#a8ce80;margin:0;padding-bottom:.5em;padding-top:.5em}#header a{color:#fff}#header #top-logo{font-size:2em}#login-container{color:#fff;position:relative;margin-top:3em;text-transform:uppercase}#login-container a{color:#fff}#login-container form input[type=submit]{background:none;border:2px solid #fff;border-radius:3px;font-size:2em;margin-top:1em;padding:0 1em;text-transform:uppercase}#bienvenido-container{font-size:1.5em}#bienvenido-container h3{color:#5c5c5c}#bienvenido-container p{margin-bottom:1em}#registrarse-call{margin-top:2em}#registrarse-call a:hover{cursor:pointer}.avatar-grande{width:10em}.back-button i{font-size:3em}.chkt-logo h1{font-size:4em;margin-bottom:0}.chkt-logo h2{font-size:2.8em;margin-top:0}.content-col{background:#fff}.form-text-field{border-bottom:1px solid #fff;font-size:2em;margin-bottom:1em}.form-text-field i{font-size:2em}.form-text-field input:not([type=submit]):not([type=file]){background:none;border:none}.form-text-field label{margin-bottom:0}.form-text-field ::-webkit-input-placeholder{color:#fff;text-transform:uppercase}.form-text-field :-moz-placeholder,.form-text-field ::-moz-placeholder{color:#fff;opacity:1;text-transform:uppercase}.form-text-field :-ms-input-placeholder{color:#fff;text-transform:uppercase}.form-text-field :placeholder-shown{color:#fff;text-transform:uppercase}.inactive{color:#779953}.section-container h3{color:#a8ce80}.section-container .content-form{padding-bottom:2em}.section-container .content-form input[type=date],.section-container .content-form input[type=text]{width:100%}.test{height:60px;background:#fff;padding-top:30px}.texto-head{text-transform:uppercase}
+chkt-slider {
+  width: 100%; }
+  chkt-slider .slider {
+    height: 4px;
+    width: 100%; }
+    chkt-slider .slider .total, chkt-slider .slider .filled {
+      border: none;
+      height: 100%;
+      margin: none;
+      padding: none;
+      position: relative; }
+    chkt-slider .slider .total {
+      background: #E3E3E3;
+      width: 100%; }
+      chkt-slider .slider .total .filled {
+        background: #98CC81;
+        width: 50%; }
+        chkt-slider .slider .total .filled .end-marker, chkt-slider .slider .total .filled .end-center {
+          border-radius: 50%;
+          float: right;
+          position: relative; }
+        chkt-slider .slider .total .filled .end-marker {
+          background: rgba(201, 201, 201, 0.5);
+          height: 30px;
+          margin-top: -13px;
+          margin-right: -15px;
+          width: 30px; }
+          chkt-slider .slider .total .filled .end-marker .end-center {
+            background: #c9c9c9;
+            height: 20px;
+            margin-top: 5px;
+            margin-right: 5px;
+            width: 20px; }
+
+a.button-link {
+  border: solid 2px #5C5C5C;
+  border-radius: 3px;
+  color: #5C5C5C;
+  padding: 0.4em 1.4em; }
+
+body {
+  background-image: url("/images/login_background.png");
+  color: #5C5C5C; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    color: #FFFFFF; }
+
+#header {
+  background: #A8CE80;
+  color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em; }
+  #header a {
+    color: #FFFFFF; }
+  #header #top-logo {
+    font-size: 2em; }
+
+#login-container {
+  color: #FFFFFF;
+  position: relative;
+  margin-top: 3em;
+  text-transform: uppercase; }
+  #login-container a {
+    color: #FFFFFF; }
+  #login-container form input[type="submit"] {
+    background: none;
+    border: solid 2px #FFFFFF;
+    border-radius: 3px;
+    font-size: 2em;
+    margin-top: 1em;
+    padding: 0 1em;
+    text-transform: uppercase; }
+
+#bienvenido-container {
+  font-size: 1.5em; }
+  #bienvenido-container h3 {
+    color: #5C5C5C; }
+  #bienvenido-container p {
+    margin-bottom: 1em; }
+
+#registrarse-call {
+  margin-top: 2em; }
+  #registrarse-call a:hover {
+    cursor: pointer; }
+
+.avatar-grande {
+  width: 10em; }
+
+.back-button i {
+  font-size: 3.0em; }
+
+.chkt-logo h1 {
+  font-size: 4em;
+  margin-bottom: 0; }
+
+.chkt-logo h2 {
+  font-size: 2.8em;
+  margin-top: 0; }
+
+.content-col {
+  background: #FFFFFF; }
+
+.form-text-field {
+  border-bottom: solid 1px #FFFFFF;
+  font-size: 2em;
+  margin-bottom: 1em; }
+  .form-text-field i {
+    font-size: 2em; }
+  .form-text-field input:not([type=submit]):not([type=file]) {
+    background: none;
+    border: none; }
+  .form-text-field label {
+    margin-bottom: 0px; }
+  .form-text-field ::-webkit-input-placeholder {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+  .form-text-field :-moz-placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+    text-transform: uppercase; }
+  .form-text-field ::-moz-placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+    text-transform: uppercase; }
+  .form-text-field :-ms-input-placeholder {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+  .form-text-field :placeholder-shown {
+    color: #FFFFFF;
+    text-transform: uppercase; }
+
+.inactive {
+  color: #779953; }
+
+.section-container h3 {
+  color: #A8CE80; }
+
+.section-container .content-form {
+  padding-bottom: 2em; }
+  .section-container .content-form input[type=text], .section-container .content-form input[type=date] {
+    width: 100%; }
+
+.test {
+  height: 60px;
+  background: white;
+  padding-top: 30px; }
+
+.texto-head {
+  text-transform: uppercase; }
