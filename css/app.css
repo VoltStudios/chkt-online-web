@@ -1,3 +1,15 @@
+chkt-footer .footer {
+  background: #A8CE80;
+  font-size: 1.5em;
+  padding-top: 0.166666667em;
+  padding-bottom: 0.166666667em; }
+  chkt-footer .footer i {
+    font-size: 1.5em; }
+  chkt-footer .footer a.activo {
+    color: #FFFFFF; }
+  chkt-footer .footer a.inactivo {
+    color: #689951; }
+
 chkt-header #header {
   background: #A8CE80;
   color: #FFFFFF;
@@ -78,6 +90,10 @@ body {
   #bienvenido-container p {
     margin-bottom: 1em; }
 
+#pantalla-principal-container #riesgo-slider .slider {
+  margin-bottom: 4em;
+  margin-top: 4em; }
+
 #registrarse-call {
   margin-top: 2em; }
   #registrarse-call a:hover {
@@ -140,6 +156,9 @@ body {
   padding-bottom: 2em; }
   .section-container .content-form input[type=text], .section-container .content-form input[type=date] {
     width: 100%; }
+
+.section-container .full-width {
+  padding: 0; }
 
 .test {
   height: 60px;
