@@ -15,7 +15,7 @@ function RegistrarseController($http, $rootScope, $location, UserService){
 			function success(response) {
 				UserService.login(response.data.data.curp, password, 
 					function success(response) {
-						$location.path("/principal");
+						$location.path("/bienvenido");
 					},
 					function failure(response) {
 						console.log(response);
