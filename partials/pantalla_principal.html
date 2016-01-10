@@ -1,0 +1,39 @@
+<chkt-header></chkt-header>
+
+<div class="container-fluid section-container" id="pantalla-principal-container" role="main">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 content-col">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h3 class="texto-head">Bienvenido a tu portal</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<img class="avatar-grande" src="/images/account_circle_black.svg" alt="Avatar Usuario">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p>{{ pantallaPrincipal.nombre }}</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+					<chkt-slider id="riesgo-slider" fill-percentage="pantallaPrincipal.porcentajeRiesgo" fill-color="pantallaPrincipal.colorRiesgo"></chkt-slider>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p>{{ pantallaPrincipal.nivelSalud }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 full-width">
+			<chkt-footer></chkt-footer>
+		</div>
+	</div>
+</div>
