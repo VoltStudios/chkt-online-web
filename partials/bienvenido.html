@@ -1,4 +1,4 @@
-<div class="container" id="pantalla-principal-container">
+<div class="container" id="bienvenido-container">
 	<div class="row">
 		<div class="col-xs-12">
 			<a href="/" class="back-button"><i class="material-icons" id="top-back">keyboard_arrow_left</i></a>
@@ -16,10 +16,11 @@
 	</div>
 	<div class="row">
 		<div class="col-xs-12 text-center">
-			<p>{{ pantallaPrincipal.nombre || "Usuario" }}</p>
+			<p>{{ bienvenido.nombre || "Usuario" }}</p>
 		</div>
 	</div>
-	<div id="sin-cuestionario" ng-hide="pantallaPrincipal.user && pantallaPrincipal.user.cuestionario_tomado">
+
+	<div>
 		<div class="row">
 			<div class="col-xs-12 text-center">
 				<p>Contesta las siguientes preguntas para conocer el estado de tú salud.</p>
