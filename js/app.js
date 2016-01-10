@@ -1,6 +1,6 @@
 angular.module('chktApp', 
-	['ngRoute', 'mainCtrl', 'loginCtrl', 'registrarseCtrl', 'bienvenidoCtrl', 'cuestionarioCtrl', 
-	 'headerDrctv', 'sliderDrctv'])
+	['ngRoute', 'mainCtrl', 'loginCtrl', 'registrarseCtrl', 'bienvenidoCtrl', 'cuestionarioCtrl',
+	 'headerDrctv', 'sliderDrctv', 'footerDrctv'])
 
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
