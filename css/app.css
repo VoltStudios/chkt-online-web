@@ -163,6 +163,16 @@ body {
 .inactive {
   color: #779953; }
 
+.link-button div {
+  background: #A8CE80;
+  border-radius: 2px;
+  margin: 3em;
+  padding: 1em;
+  color: #FFFFFF; }
+
+.link-button:hover {
+  text-decoration: none; }
+
 .section-container h3 {
   color: #A8CE80; }
 
