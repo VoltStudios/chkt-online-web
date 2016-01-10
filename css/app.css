@@ -1,3 +1,14 @@
+chkt-header #header {
+  background: #A8CE80;
+  color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em; }
+  chkt-header #header a {
+    color: #FFFFFF; }
+  chkt-header #header #top-logo {
+    font-size: 2em; }
+
 chkt-slider {
   width: 100%; }
   chkt-slider .slider {
@@ -44,17 +55,6 @@ body {
   body h1, body h2, body h3, body h4, body h5, body h6 {
     color: #FFFFFF; }
 
-#header {
-  background: #A8CE80;
-  color: #FFFFFF;
-  margin: 0;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em; }
-  #header a {
-    color: #FFFFFF; }
-  #header #top-logo {
-    font-size: 2em; }
-
 #login-container {
   color: #FFFFFF;
   position: relative;
@@ -97,9 +97,6 @@ body {
   font-size: 2.8em;
   margin-top: 0; }
 
-.content-col {
-  background: #FFFFFF; }
-
 .form-text-field {
   border-bottom: solid 1px #FFFFFF;
   font-size: 2em;
@@ -134,6 +131,10 @@ body {
 
 .section-container h3 {
   color: #A8CE80; }
+
+.section-container .content-col {
+  background: #FFFFFF;
+  padding-bottom: 2em; }
 
 .section-container .content-form {
   padding-bottom: 2em; }
