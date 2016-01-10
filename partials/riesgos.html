@@ -3,13 +3,23 @@
 <div class="container-fluid section-container" id="riesgos-container" role="main">
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3 content-col">
-			
-			<div class="row riesgo" ng-repeat="riesgo in riesgos.riesgos">
-				<div class="col-xs-4">
-					<p>{{ riesgo.etiqueta }}</p>
+
+			<div ng-repeat="riesgo in riesgos.riesgos">
+				<div class="row riesgo">
+					<div class="col-xs-4">
+						<h4>{{ riesgo.etiqueta }}</h4>
+					</div>
+					<div class="col-xs-7 slider-col">
+						<chkt-slider fill-percentage="riesgo.riesgo * 10" fill-color="riesgo.color"></chkt-slider>
+					</div>
+					<div class="col-xs-1 text-center">
+						<i class="fa {{ riesgo.show ? 'fa-angle-down' : 'fa-angle-right' }} show-icon" ng-click="riesgo.show = !riesgo.show"></i>
+					</div>
 				</div>
-				<div class="col-xs-8 slider-col">
-					<chkt-slider fill-percentage="riesgo.riesgo * 10" fill-color="riesgo.color"></chkt-slider>
+				<div class="row descripcion" ng-show="riesgo.show">
+					<div class="col-xs-10 col-xs-offset-1 text-center">
+						<p>{{ riesgo.descripcion }}</p>
+					</div>
 				</div>
 			</div>
 

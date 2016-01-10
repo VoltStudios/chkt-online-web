@@ -99,14 +99,20 @@ body {
   #registrarse-call a:hover {
     cursor: pointer; }
 
-#riesgos-container p {
+#riesgos-container h4 {
   color: #5C5C5C;
   font-size: 1.5em; }
+
+#riesgos-container .descripcion {
+  margin-top: 1em; }
 
 #riesgos-container .riesgo {
   border-top: solid 2px #E3E3E3;
   margin-top: 1em;
   padding-top: 1em; }
+  #riesgos-container .riesgo i.show-icon {
+    color: #E3E3E3;
+    font-size: 3em; }
 
 #riesgos-container .slider-col {
   padding-top: 1em; }
