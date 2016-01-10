@@ -1,6 +1,6 @@
 angular.module('chktApp', 
 	['ngRoute', 'mainCtrl', 'loginCtrl', 'registrarseCtrl', 'bienvenidoCtrl', 'cuestionarioCtrl',
-	 'pantallaPrincipalCtrl', 'headerDrctv', 'sliderDrctv', 'footerDrctv'])
+	 'pantallaPrincipalCtrl', 'riesgosCtrl', 'headerDrctv', 'sliderDrctv', 'footerDrctv'])
 
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
 	$routeProvider
@@ -28,6 +28,11 @@ angular.module('chktApp',
 	.when("/principal", {
 		templateUrl: "/partials/pantalla_principal.html",
 		controller: "PantallaPrincipalController as pantallaPrincipal"
+	})
+
+	.when("/riesgos", {
+		templateUrl: "/partials/riesgos.html",
+		controller: "RiesgosController as riesgos"
 	});
 
 	$locationProvider.html5Mode(true);
