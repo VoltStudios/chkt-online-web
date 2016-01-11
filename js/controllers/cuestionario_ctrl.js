@@ -5,7 +5,7 @@
 */
 angular.module('cuestionarioCtrl', ['userSrvc'])
 
-.controller('CuestionarioController', ['UserService', function(UserService){
+.controller('CuestionarioController', ['$location', 'UserService', function($location ,UserService){
 	console.log("Cuestionario...");
 
 	this.status = {}
@@ -13,7 +13,7 @@ angular.module('cuestionarioCtrl', ['userSrvc'])
 	this.responder = function(cuestionario) {
 		UserService.enviarStatus(cuestionario,
 			function success(response) {
-				console.log(response);
+				$location.url("/riesgos")
 			},
 			function failure(response) {
 				console.log(response);

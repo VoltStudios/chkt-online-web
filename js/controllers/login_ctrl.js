@@ -8,8 +8,7 @@ function LoginController($location, UserService){
 	this.login = function() {
 		UserService.login(this.curp, this.password,
 			function success(response) {
-
-				$location.path("/principal");
+				$location.path("/riesgos");
 			},
 			function failure(response) {
 				console.log("Error en login...")

@@ -1,6 +1,6 @@
 angular.module('chktApp', 
 	['ngRoute', 'mainCtrl', 'loginCtrl', 'registrarseCtrl', 'bienvenidoCtrl', 'cuestionarioCtrl',
-	 'pantallaPrincipalCtrl', 'riesgosCtrl', 'expedienteCtrl', 'localizaCtrl', 'clinicaCtrl', 'citasCtrl',
+	 'riesgosCtrl', 'expedienteCtrl', 'localizaCtrl', 'clinicaCtrl', 'citasCtrl',
 	 'agregarCitaCtrl',
 	 'headerDrctv', 'sliderDrctv', 'footerDrctv'])
 
@@ -25,11 +25,6 @@ angular.module('chktApp',
 	.when("/cuestionario", {
 		templateUrl: "/partials/cuestionario.html",
 		controller: "CuestionarioController as cuestionario"
-	})
-
-	.when("/principal", {
-		templateUrl: "/partials/pantalla_principal.html",
-		controller: "PantallaPrincipalController as pantallaPrincipal"
 	})
 
 	.when("/riesgos", {
