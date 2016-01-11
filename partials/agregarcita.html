@@ -1,0 +1,65 @@
+<chkt-header></chkt-header>
+
+<div class="container-fluid section-container" id="agregar-cita-container" role="main">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 content-col">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h4>Consulta tu agenda y agenda citas</h4>
+				</div>
+			</div>
+			<form novalidate name="agregarCitaForm" class="content-form">
+				<div class="row">
+					<div class="col-xs-12">
+						<h4 class="texto-head primary bold">Nueva cita</h4>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<label for="fecha">Fecha de Cita</label><br />
+						<input name="fecha" type="date" ng-model="agregarCita.cita.fecha" required>
+					</div>
+					<div class="col-xs-6">
+						<label for="horario">Horario</label><br />
+						<select name="horario" ng-model="agregarCita.cita.horario" required>
+							<option value="">Seleccionar Horario</option>
+							<option value="7" selected>7:00 am</option>
+							<option value="8">8:00 am</option>
+							<option value="9">9:00 am</option>
+							<option value="10">10:00 am</option>
+							<option value="11">11:00 am</option>
+							<option value="12">12:00 pm</option>
+							<option value="13">1:00 pm</option>
+							<option value="14">2:00 pm</option>
+							<option value="15">3:00 pm</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="ubicacion">Ubicación</label>
+						<input type="text" ng-model="agregarCita.cita.ubicacion" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<label for="detalles">Detalles</label><br>
+						<textarea name="detalles" cols="10" ng-model="agregarCita.cita.detalles"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<button class="primary-button" ng-click="agregarCita.agregarCita(agregarCita.cita)" ng-disabled="agregarCitaForm.$invalid">
+							Crear Recordatorio
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 full-width">
+			<chkt-footer></chkt-footer>
+		</div>
+	</div>
+</div>
