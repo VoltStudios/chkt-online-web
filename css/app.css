@@ -112,6 +112,14 @@ body {
   #clinica-container .link-button div {
     margin-top: 0.5em; }
 
+#confirmacion-container img {
+  width: 100%; }
+
+#confirmacion-container .ticket {
+  border: solid 2px #A8CE80;
+  border-radius: 3px;
+  padding: 2em; }
+
 #expediente-container img {
   width: 100%; }
 

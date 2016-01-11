@@ -1,7 +1,7 @@
 angular.module('chktApp', 
 	['ngRoute', 'mainCtrl', 'loginCtrl', 'registrarseCtrl', 'bienvenidoCtrl', 'cuestionarioCtrl',
-	 'riesgosCtrl', 'expedienteCtrl', 'localizaCtrl', 'clinicaCtrl', 'citasCtrl',
-	 'agregarCitaCtrl',
+	 'riesgosCtrl', 'expedienteCtrl', 'localizaCtrl', 'clinicaCtrl', 'citasCtrl', 'agregarCitaCtrl',
+	 'confirmacionCtrl',
 	 'headerDrctv', 'sliderDrctv', 'footerDrctv'])
 
 .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
@@ -45,6 +45,11 @@ angular.module('chktApp',
 	.when("/clinica", {
 		templateUrl: "/partials/clinica.html",
 		controller: "ClinicaController as clinica"
+	})
+
+	.when("/confirmacion", {
+		templateUrl: "/partials/confirmacion.html",
+		controller: "ConfirmacionController as confirmacion"
 	})
 
 	.when("/citas", {

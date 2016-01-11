@@ -1,0 +1,33 @@
+<chkt-header></chkt-header>
+
+<div class="container-fluid section-container" id="confirmacion-container" role="main">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 content-col">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h4>Ubicación de mi clínica IMSS</h4>
+					<p>Clínica del IMSS de acuerdo a tu localización</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="ticket">
+						<h4>Proceso de Registro Completado</h4>
+						<p><span class="bold">Nombre: </span>{{ confirmacion.nombre }}</p>
+						<p><span class="bold">Nivel de Riesgo: </span>{{ confirmacion.user.riesgo_general }}</p>
+						<h4>Tu información ha sido guardada</h4>
+						<div class="barcode text-center">
+							<div><img src="/images/barcode.png" alt="Codigo de barras"></div>
+							<p>39123439</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 full-width">
+			<chkt-footer></chkt-footer>
+		</div>
+	</div>
+</div>
