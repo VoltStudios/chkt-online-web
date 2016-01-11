@@ -90,6 +90,15 @@ body {
   #bienvenido-container p {
     margin-bottom: 1em; }
 
+#expediente-container img {
+  width: 100%; }
+
+#expediente-container a#cuestionario-link {
+  color: #5C5C5C;
+  font-size: 1.5em; }
+  #expediente-container a#cuestionario-link i {
+    color: #A8CE80; }
+
 #pantalla-principal-container #riesgo-slider .slider {
   margin-bottom: 4em;
   margin-top: 4em; }
@@ -98,10 +107,6 @@ body {
   margin-top: 2em; }
   #registrarse-call a:hover {
     cursor: pointer; }
-
-#riesgos-container h4 {
-  color: #5C5C5C;
-  font-size: 1.5em; }
 
 #riesgos-container .descripcion {
   margin-top: 1em; }
@@ -163,6 +168,9 @@ body {
 .inactive {
   color: #779953; }
 
+.link-button.last-button div {
+  margin-top: 0; }
+
 .link-button div {
   background: #A8CE80;
   border-radius: 2px;
@@ -175,6 +183,10 @@ body {
 
 .section-container h3 {
   color: #A8CE80; }
+
+.section-container h4 {
+  color: #5C5C5C;
+  font-size: 1.5em; }
 
 .section-container .content-col {
   background: #FFFFFF;

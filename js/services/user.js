@@ -14,6 +14,8 @@ angular.module('userSrvc', [])
 				$http.defaults.headers.common.Authorization = response.data.access_token;
 
 				me(function meSuccess(response) {
+					console.log(response);
+
 					$rootScope.user = response.data;
 					successCallback(response);
 				}, failureCallback);
