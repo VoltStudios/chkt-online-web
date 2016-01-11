@@ -5,7 +5,7 @@
 */
 angular.module('riesgosCtrl', [])
 
-.controller('RiesgosController', ['$rootScope', function($rootScope){
+.controller('RiesgosController', ['$rootScope', '$timeout', '$scope', function($rootScope, $timeout, $scope){
 	var obtenerColor = function(riesgo) {
 		if (riesgo < 4) {
 			return "#98CC81";
@@ -18,8 +18,8 @@ angular.module('riesgosCtrl', [])
 
 	var user = $rootScope.user.data;
 
-	console.log(user);
-
+	// Información de presentación. Para actualizarse esta losta se puede hacer directamente. En versiones
+	// posteriores se podría acceder a un servicio web que provea esta información. Sea el pripio o uno externo.
 	this.riesgos = [
 		{etiqueta: "Colesterol", riesgo: user.riesgo_colesterol, color: obtenerColor(user.riesgo_colesterol),
 			show: false, link: "/colesterol",
@@ -46,4 +46,14 @@ angular.module('riesgosCtrl', [])
 			descripcion: "El cáncer de colon es una enfermedad que se desarrolla debido a que la mucosa del colon contenida en un pólipo existente evoluciona por diferentes causas hasta convertirse en un tumor maligno. Normalmente las células malignas se localizan en la porción intermedia y más larga del intestino grueso."
 		}
 	];
+
+	this.popUpVisible = false;
+	
+	this.toggleDescripcion = function(riesgo) {
+		!riesgo;
+	}
+
+	this.togglePopup = function() {
+		this.popUpVisible = !this.popUpVisible;
+	}
 }]);

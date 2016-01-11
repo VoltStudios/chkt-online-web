@@ -1,0 +1,32 @@
+<chkt-header></chkt-header>
+
+<div class="container-fluid section-container" id="clinica-container" role="main">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 content-col">
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<h4>Ubicación de mi clínica IMSS</h4>
+					<p>Clínica del IMSS de acuerdo a tu localización</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2 text-center"><img src="/images/result_map.jpg" alt="Mapa de búsqueda"></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<p id="clinica-info">{{ clinica.datosClinica }}</p>
+				</div>
+			</div>
+			<div class="row text-center">
+				<a href="/riesgos" class="link-button first-button">
+					<div>Confirmación</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3 full-width">
+			<chkt-footer></chkt-footer>
+		</div>
+	</div>
+</div>

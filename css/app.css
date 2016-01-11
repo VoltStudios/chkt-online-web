@@ -90,6 +90,22 @@ body {
   #bienvenido-container p {
     margin-bottom: 1em; }
 
+#clinica-container h4 {
+  text-transform: uppercase; }
+
+#clinica-container img {
+  width: 100%; }
+
+#clinica-container #clinica-info {
+  margin-top: 2em; }
+
+#clinica-container .link-button {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+  #clinica-container .link-button div {
+    margin-top: 0.5em; }
+
 #expediente-container img {
   width: 100%; }
 
@@ -98,6 +114,19 @@ body {
   font-size: 1.5em; }
   #expediente-container a#cuestionario-link i {
     color: #A8CE80; }
+
+#localiza-container h4 {
+  text-transform: uppercase; }
+
+#localiza-container img {
+  width: 100%; }
+
+#localiza-container .link-button {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+  #localiza-container .link-button div {
+    margin-top: 0.5em; }
 
 #pantalla-principal-container #riesgo-slider .slider {
   margin-bottom: 4em;
@@ -168,6 +197,9 @@ body {
 .inactive {
   color: #779953; }
 
+.link-button.first-button div {
+  margin-bottom: 0; }
+
 .link-button.last-button div {
   margin-top: 0; }
 
@@ -181,6 +213,20 @@ body {
 .link-button:hover {
   text-decoration: none; }
 
+.popup-background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  z-index: 1; }
+  .popup-background .popup {
+    background: #FFFFFF;
+    border: solid 2px #A8CE80;
+    font-size: 1.4em;
+    margin: 5em auto;
+    max-width: 25em;
+    padding: 2em; }
+
 .section-container h3 {
   color: #A8CE80; }
 
@@ -193,17 +239,27 @@ body {
   padding-bottom: 2em; }
 
 .section-container .content-form {
-  padding-bottom: 2em; }
+  padding-bottom: 2em;
+  padding-top: 2em; }
   .section-container .content-form input[type=text], .section-container .content-form input[type=date] {
     width: 100%; }
 
 .section-container .full-width {
   padding: 0; }
 
-.test {
-  height: 60px;
-  background: white;
-  padding-top: 30px; }
+.tab-selector {
+  color: #5C5C5C;
+  border: solid 2px #E3E3E3;
+  border-radius: 3px;
+  margin-top: 2em;
+  padding: 2px;
+  text-transform: uppercase; }
+  .tab-selector .tab {
+    cursor: pointer;
+    border-radius: 3px; }
+    .tab-selector .tab.active {
+      background: #A8CE80;
+      color: #FFFFFF; }
 
 .texto-head {
   text-transform: uppercase; }
